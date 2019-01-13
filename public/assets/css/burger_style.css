@@ -1,0 +1,79 @@
+
+li {
+    padding: 5px;
+    margin: 5px;
+    
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+  }
+
+  body {
+    background-color: darkred;
+  }
+
+  h1 {
+    font-family: 'Coiny', cursive;
+    font-size: 60px;
+    color: #FFCA33;  
+  }
+
+  h2 {
+    font-family: 'Coiny', cursive;
+    color: white;
+  }
+
+  ul {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+  }
+
+  #container {
+    padding: 10px;
+    margin: 25px;
+  }
+
+  .change-devoured {
+    background-color: #FFCA33;
+    color: black;
+    border-radius: 4px;
+    font-size: 12px;
+    border: none;
+    margin-left: 30px;
+  }
+
+  .delete-burger {
+    background-color: #FFCA33;
+    color: black;
+    border-radius: 4px;
+    font-size: 12px;
+    border: none;
+    margin-left: 7px;
+  }
+
+  #question {
+      font-family: 'Coiny', cursive;
+      font-size: 20px;
+      margin-top: 15px;
+  }
+
+  /* #burger-img {
+      width: 300px;
+      height: 300px;
+  } */
+
+ 
+  

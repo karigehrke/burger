@@ -1,0 +1,66 @@
+<div class="text-center mb-4 mt-2" id="burger-img">
+  <img src="/assets/img/burger_img.png" alt="burger image" width="200px" height="200px">
+</div>
+
+<h1 class="text-center">Eat-Da-Burger!</h1>
+
+<div id="container">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-4">
+
+      <h2>Burgers to Eat</h2>
+
+      <ul class="m-3">
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burgers-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-4">
+      <h2>Burgers Eaten</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burgers-block devoured=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+  </div>
+  <div class="col-2"></div>
+
+  <div class="row text-center mt-5">
+<div class="col">
+
+    <h2>Add a Burger</h2>
+    <form class="create-form justify-content-center align-items-center">
+
+      <div class="form-group ">
+        <label for="burger">Burger Name:</label>
+        <input class="form-control col-md-4 mx-auto" type="text" id="burger" name="name">
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="devoured" id="question">Have you eaten this burger yet?</label><br>
+        <div class="form-check-inline">
+          <input class="mb-2 m-2" type="radio" name="devoured" value="1" checked> Eaten
+        </div>
+
+        <div class="form-check-inline">
+          <input class="mb-2 m-2" type="radio" name="devoured" value="0"> Not Eaten
+        </div>
+      </div>
+
+      <button class="btn btn-warning" type="submit">Add Burger</button>
+
+    </form>
+</div>
+  </div>
+</div>
+</div>
